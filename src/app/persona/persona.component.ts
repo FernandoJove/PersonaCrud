@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Persona } from './persona';
-import { PersonaService } from './persona.service';
+import { Persona } from '../models/persona';
+import { PersonaService } from '../services/persona.service';
 
 
 @Component({
@@ -9,19 +9,11 @@ import { PersonaService } from './persona.service';
   styleUrls: ['./persona.component.css']
 })
 export class PersonaComponent implements OnInit {
-
-  displayedColumns: string[] = ['idPersona', 'Nombre', 'Apellidos', 'Edad','Telefono','Correo','DNI'];
-  personaLista:Persona[];  
-
-  constructor(private _personaService:PersonaService) {}
-   
-  ngOnInit(){
-    this.getPersonas();
-   }
-
-  getPersonas(){  
-    this._personaService.getPersonas().subscribe(data=> {console.log(data);this.personaLista = data}); 
+  
+  ngOnInit(): void {
   }
+
+  
   
   
   

@@ -11,11 +11,21 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
+import { AddPersonaComponent } from './components/persona/add-persona/add-persona.component';
+import { UpdatePersonaComponent } from './components/persona/update-persona/update-persona.component';
+import { MatIconModule } from '@angular/material/icon';
+import { ListPersonaComponent } from './components/persona/list-persona/list-persona.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonaComponent
+    PersonaComponent,
+    AddPersonaComponent,
+    UpdatePersonaComponent,
+    ListPersonaComponent
   ],
   imports: [
     HttpClientModule,
@@ -23,7 +33,6 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
-    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
@@ -31,8 +40,12 @@ import { HttpClientModule } from '@angular/common/http';
   
     MatBadgeModule,
     MatButtonModule,
-    MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatIconModule ,
+    MatToolbarModule,
+    BrowserModule,
+    MatFormFieldModule,
+    MatInputModule,
     
     
 

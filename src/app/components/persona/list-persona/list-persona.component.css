@@ -1,0 +1,32 @@
+.center {
+    display: flex;
+    justify-content: center;
+  }
+  .example-card {
+    max-width: 400px;
+  }
+  
+  
+  
+  table {
+    width: 100%;
+  }
+  .container-update {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .example-card {
+    min-width: 370px;
+  max-width: 370px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
+
+  }
